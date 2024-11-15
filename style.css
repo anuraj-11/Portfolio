@@ -1,12 +1,25 @@
-.menubar-mobile{
+/* General Body and Layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Set background color to black */
+    color: white;
+}
+
+/* --------------------- Navigation Bar Styles --------------------- */
+
+/* Mobile Navigation Bar */
+.menubar-mobile {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     display: none;
 }
-.menubar-desktop{
-    background:red; 
+
+/* Desktop Navigation Bar */
+.menubar-desktop {
+    background: red;
     position: fixed;
     top: 0;
     left: 0;
@@ -14,96 +27,167 @@
     width: 20%;
     padding: 10px 20px;
 }
-.menubar-desktop li{
-    background-color:coral;
+
+.menubar-desktop li {
+    background-color: coral;
     border: none;
     padding-bottom: 10px;
     text-align: center;
 }
-.menubar-desktop li  a{
+
+.menubar-desktop li a {
     text-decoration: none;
     font-weight: 700;
     color: aliceblue;
 }
-.profile_image{
+
+/* Profile Image in the Navigation */
+.profile_image {
     padding: 20px;
     text-align: center;
 }
-.profile_image img{
-    width: 200px;
+
+.profile_image img {
+    width: 150px;
     height: 190px;
     border-radius: 50%;
     border: 10px solid salmon;
-
 }
 
-
-.main-content{
+/* --------------------- Main Content Styles --------------------- */
+.main-content {
     padding-left: 20%;
     background: #000000;
     margin-bottom: 0;
 }
 
-section{
+/* --------------------- Section Styles --------------------- */
+
+/* General Section Styles */
+section {
     padding: 0 10%;
     padding-top: 10%;
     color: white;
-    height: 100vh;
+    margin-bottom: 40px; /* Adds space below each section */
+    min-height: 60vh; /* Ensure each section has at least a 60vh height */
 }
-section h4,h1, h6{
-    text-transform: uppercase;    
+
+section h4, h1, h6 {
+    text-transform: uppercase;
 }
-section h4{
-    font-size: 45px;
-    color: blue;
-    padding-bottom: 10px;
-}
-section h5{
+
+section h5 {
     font-size: 28px;
     padding-bottom: 20px;
 }
 
-#about h1{
+#about h1 {
     font-size: 72px;
-    color:blue;
+    color: blue;
     padding-bottom: 10px;
 }
 
-#about .icons{
+#about .icons {
     font-size: 18px;
 }
 
-#project img{
+#project img {
     width: 30%;
     height: 40%;
     margin: 10px;
 }
 
-.icons{
-
+.icons {
     font-size: 38px;
     padding-top: 10px;
     margin-right: 20px;
 }
 
-@media screen and (max-width:780px) {
-    .menubar-mobile{
+/* --------------------- Color Styling for Specific Section Headings --------------------- */
+
+/* Education Section Title */
+#education h4 {
+    color: #FF6347; /* Tomato color for Education heading */
+    font-size: 50px; /* Increased size for Education heading */
+}
+
+/* Project Section Title */
+#project h4 {
+    color: blue; /* SteelBlue color for Project section heading */
+    font-size: 50px; /* Increased size for Project heading */
+}
+
+/* Technical Skills Section Title */
+#skill h5 {
+    color: #32CD32; /* LimeGreen color for Technical Skills section heading */
+    font-size: 36px; /* Increased size for Technical Skills heading */
+}
+
+/* --------------------- Mobile Responsiveness --------------------- */
+
+@media screen and (max-width: 780px) {
+    /* Mobile Navigation Bar */
+    .menubar-mobile {
         display: block;
     }
 
-    .menubar-desktop{
+    .menubar-desktop {
         display: none;
     }
-    .main-content{
+
+    /* Main Content for Mobile */
+    .main-content {
         padding: 0;
         padding-bottom: 10px;
     }
 
-    #project img{
+    /* Section Styles for Mobile */
+    section {
+        padding: 20px; /* Adds padding on mobile */
+        margin-bottom: 20px; /* Adds space between sections on mobile */
+        min-height: 50vh; /* Ensure sections are tall enough for mobile */
+    }
+
+    /* Image Style for Project Section */
+    #project img {
         width: 100%;
     }
 
-    section{
-        height: 100%;
+    /* Profile Image on Mobile */
+    .profile_image img {
+        width: 150px; /* Smaller profile image on mobile */
+        height: 150px;
     }
+
+    /* Adjust Heading Sizes for Mobile */
+    section h4 {
+        font-size: 32px; /* Smaller heading size for mobile */
+    }
+
+    section h5 {
+        font-size: 24px; /* Smaller heading size for mobile */
+    }
+
+    section h1 {
+        font-size: 48px; /* Smaller title size on mobile */
+    }
+}
+
+/* --------------------- Typing Effect --------------------- */
+
+/* Typing Effect Styles */
+.typedText {
+    font-size: 36px;
+    color: blue;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* --------------------- Icon Styles --------------------- */
+
+/* Font Awesome Icons Styling */
+.icons {
+    font-size: 38px;
+    padding-top: 10px;
+    margin-right: 20px;
 }

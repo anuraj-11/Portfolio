@@ -29,7 +29,7 @@ body {
 }
 
 .menubar-desktop li {
-    background-color: coral;
+    background-color: maroon;
     border: none;
     padding-bottom: 10px;
     text-align: center;
@@ -50,8 +50,8 @@ body {
 .profile_image img {
     width: 150px;
     height: 190px;
-    border-radius: 50%;
-    border: 10px solid salmon;
+    border-radius: 80%;
+   
 }
 
 /* --------------------- Main Content Styles --------------------- */
